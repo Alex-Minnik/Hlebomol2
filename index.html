@@ -4,6 +4,7 @@
     <meta charset="UTF-8">    
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="header">
@@ -50,8 +51,28 @@
                     <li>Чай из Непала</li>
                 </ul>
             </div>
-            <div class="sumTotal"></div>
+            <div class="sumTotal">
+                <img src="img/purse.svg" alt="purse">
+                <div class="sum">
+                    13990
+                    <i class="fa fa-rub" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
-    </div>
+    </div> 
+
+    <form class="order"  action="#">
+        <div class="orderDataFilling">
+            <h2>Оформление заказа</h2>
+            <div class="selectFizOrYur">
+                <input type="radio" name="fizOrYur" value="individual" id="individual"  checked="checked">
+                <label for="individual">Физическое лицо</label>
+                <input type="radio" name="fizOrYur" value="entity" id="entity">
+                <label for="entity">Юридическое лицо</label>                
+            </div>
+            <h3>Контактные данные</h3>
+        </div>
+        <div class="orderYour"></div>
+    </form>    
 </body>
 </html>

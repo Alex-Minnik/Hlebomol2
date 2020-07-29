@@ -39,6 +39,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #766259;
 }
 
 .logo {
@@ -86,4 +87,83 @@ li {
     font-family: Calibri;
     font-size: 13px;
     font-weight: 400;
+}
+
+.navigation-sumTotal {
+    display: flex;
+    justify-content: space-between;
+    line-height: 45px;
+}
+
+.navigation ul {
+    display: flex;    
+}
+
+.navigation ul li {
+    color: #461f02;
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+.sumTotal {
+    display: flex;
+}
+
+.sum {
+    color: #461f02;
+    font-family: Calibri;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.sum i {
+    font-size: 12px;
+}
+
+.orderDataFilling h2 {
+    color: #461f02;
+    font-family: Georgia;
+    font-size: 35px;
+}
+
+.selectFizOrYur {
+    display: flex;
+}
+
+.selectFizOrYur input {
+    display: none;
+}
+
+.selectFizOrYur label {
+    display: block;
+    width: 195px;
+    height: 49px;    
+    border: 1px solid #f0e4ca;
+    background-color: #fdfcfa;
+    color: #461f02;
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 49px;
+    text-align: center;
+}
+
+.selectFizOrYur label:first-of-type {    
+    border-radius: 4px 0 0 4px;
+}
+
+.selectFizOrYur label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+.selectFizOrYur input:checked + label {
+    background-color: #f0e4ca;
+}
+
+.selectFizOrYur label:hover {
+    color: #666;
 }
