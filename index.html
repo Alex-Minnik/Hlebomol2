@@ -7,72 +7,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
-        <div class="addNavigation-cityAccount">
-            <div class="addNavigation">
-                <ul>
-                    <li>О магазине</li>
-                    <li>Доставка и самовывоз</li>
-                    <li>Оплата</li>
-                    <li>Контакты</li>
-                    <li>Блог</li>
-                </ul>
-            </div>
-            <div class="cityAccount">
-                <ul>
-                    <li>Город: Москва</li>
-                    <li>Личный кабинет</li>
-                </ul>
-            </div>
-        </div>
-        <div class="logo-search-number">
-            <div class="logo">
-                <img class="logImg" src="img/logo.png" alt="logo">
-                <div class="logoText">
-                    <img src="img/logoText.png" alt="logoText">
-                    <p>Технологии правильного питания</p>
-                </div>
-                <input type="search">
-            </div>            
-            <div class="number">
-                <p class="numberNumber">+7 800 555-33-86</p>
-                <p class="numberText">Обратный звонок</p>
-            </div>
-        </div>
-        <div class="navigation-sumTotal">
-            <div class="navigation">
-                <ul>
-                    <li>Мельницы</li>
-                    <li>Техника</li>
-                    <li>Для выпечки</li>
-                    <li>Посуда</li>
-                    <li>Проращиватели</li>
-                    <li>Детям</li>
-                    <li>Чай из Непала</li>
-                </ul>
-            </div>
-            <div class="sumTotal">
-                <img src="img/purse.svg" alt="purse">
-                <div class="sum">
-                    13990
-                    <i class="fa fa-rub" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-    </div> 
+    <div class="container">
 
-    <form class="order"  action="#">
-        <div class="orderDataFilling">
-            <h2>Оформление заказа</h2>
-            <div class="selectFizOrYur">
-                <input type="radio" name="fizOrYur" value="individual" id="individual"  checked="checked">
-                <label for="individual">Физическое лицо</label>
-                <input type="radio" name="fizOrYur" value="entity" id="entity">
-                <label for="entity">Юридическое лицо</label>                
+        <div class="header">
+            <div class="addNavigation-cityAccount">
+                <div class="addNavigation">
+                    <ul>
+                        <li>О магазине</li>
+                        <li>Доставка и самовывоз</li>
+                        <li>Оплата</li>
+                        <li>Контакты</li>
+                        <li>Блог</li>
+                    </ul>
+                </div>
+                <div class="cityAccount">
+                    <ul>
+                        <li>Город: Москва</li>
+                        <li>Личный кабинет</li>
+                    </ul>
+                </div>
             </div>
-            <h3>Контактные данные</h3>
-        </div>
-        <div class="orderYour"></div>
-    </form>    
+            <div class="logo-search-number">
+                <div class="logo">
+                    <img class="logImg" src="img/logo.png" alt="logo">
+                    <div class="logoText">
+                        <img src="img/logoText.png" alt="logoText">
+                        <p>Технологии правильного питания</p>
+                    </div>
+                    <input type="search">
+                </div>            
+                <div class="number">
+                    <p class="numberNumber">+7 800 555-33-86</p>
+                    <p class="numberText">Обратный звонок</p>
+                </div>
+            </div>
+            <div class="navigation-sumTotal">
+                <div class="navigation">
+                    <ul>
+                        <li>Мельницы</li>
+                        <li>Техника</li>
+                        <li>Для выпечки</li>
+                        <li>Посуда</li>
+                        <li>Проращиватели</li>
+                        <li>Детям</li>
+                        <li>Чай из Непала</li>
+                    </ul>
+                </div>
+                <div class="sumTotal">
+                    <img src="img/purse.svg" alt="purse">
+                    <div class="sum">
+                        13990
+                        <i class="fa fa-rub" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <form class="order"  action="#">
+            <div class="orderDataFilling">
+                <h2>Оформление заказа</h2>
+                <div class="selectFizOrYur">
+                    <input type="radio" name="fizOrYur" value="individual" id="individual"  checked="checked">
+                    <label for="individual">Физическое лицо</label>
+                    <input type="radio" name="fizOrYur" value="entity" id="entity">
+                    <label for="entity">Юридическое лицо</label>                
+                </div>
+                <div class="contactDetails">
+                    <h3>Контактные данные</h3>
+                    <div class="contactDetails_box">
+                        <p class="parameter">Имя</p>
+                        <input class="contactDetails_input" type="text" value="Александр">
+                    </div>
+                    <div class="contactDetails_box">
+                        <p class="parameter">Фамилия</p>
+                        <input class="contactDetails_input" type="text" value="Пушкин">
+                    </div>
+                    <div class="contactDetails_box">
+                        <p class="parameter">Эл.почта</p>
+                        <input class="contactDetails_input" type="email" value="as.pushkin@mail.ru">
+                    </div>
+                    <div class="contactDetails_box">
+                        <p class="parameter">Номер телефона</p>
+                        <input class="contactDetails_input" type="number" value="+7(900)123-4567">
+                    </div> 
+                </div>
+                <div class="addressDelivery">
+                    <p class="addressDelivery_p">Адрес и способ доставки</p>
+                    <div class="address">
+                        <div class="contactDetails_box">
+                            <p class="parameter">Страна</p>
+                            <input class="contactDetails_input" type="text" value="Россия">
+                        </div> 
+                        <div class="contactDetails_box">
+                            <p class="parameter">Город</p>
+                            <input class="contactDetails_input" type="text" value="Москва">
+                        </div>
+                    </div>
+                    <div class="delivery">
+                        <p>Способ доставки</p>
+                        <div class="delivery_radio">
+                            <div class="delivery_radio_box">
+                                <input type="radio" name="delivery" value="courierService" id="courierService">
+                                <div>
+                                    <label for="courierService">Доставка курьерской службой — 710 ₽</label>
+                                    <p>(Срок доставки — 1–3 дня)</p>
+                                </div>
+                            </div>
+                            <div class="delivery_radio_box">
+                                <input type="radio" name="delivery" value="transportCompany" id="transportCompany">                            
+                                <div>
+                                    <label for="transportCompany">Доставка транспортной компанией — 210 ₽</label>
+                                    <p>(Данный вид доставки возможен при полной 
+                                        предоплате заказа. Срок доставки — 3–5 дней)</p>
+                                </div>
+                            </div>
+                            <div class="delivery_radio_box">   
+                                <input type="radio" name="delivery" value="pickup" id="pickup">                            
+                                <div>
+                                    <label for="pickup">Самовывоз — 180 ₽</label>
+                                    <p>Доставка до пункта самовывоза займет 2–3 дня</p>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="delivery_map">
+                            <h3>Пункт самовывоза</h3>
+                            <p>Станция метро</p>
+                            <input class="delivery_map_input" type="text" value="Кузнецкий мост">
+                            <div class="map"></div>
+                        </div>
+                    </div>                
+                </div> 
+                <div class="comment">
+                    <h3>Комментарий к заказу</h3>
+                    <textarea class="comment_text" name="comment" readonly></textarea>
+                </div>
+                
+                <button type="submit" class="submit">К выбору способа оплаты <i class="fa fa-angle-right" aria-hidden="true"></i></button>   
+            </div>
+            <div class="orderYour"></div>
+        </form>  
+
+    </div>      
 </body>
 </html>
